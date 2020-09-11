@@ -20,7 +20,7 @@ import java.security.MessageDigest;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-//import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.nearby.exposurenotification.ExposureNotificationStatusCodes;
 
@@ -35,37 +35,37 @@ public class ENExceptionHelper {
 	public static String getErrorMessage(Exception exception, Context context) {
 		String errorDetailMessage = null;
 		boolean attachExceptionMessage = true;
-//		if (exception instanceof ApiException) {
-//			Status status = ((ApiException) exception).getStatus();
-//			if (status.getStatusCode() == 17 && status.getStatusMessage() != null) {
-//				int connectionStatusCode = getConnectionStatusCode(status);
-//				switch (connectionStatusCode) {
-//					case ExposureNotificationStatusCodes.FAILED_NOT_SUPPORTED:
-//						if (!supportsBLE(context)) {
-//							errorDetailMessage = "Bluetooth Low Energy is not supported on this device.";
-//							attachExceptionMessage = false;
-//						} else if (!isUserDeviceOwner(context)) {
-//							errorDetailMessage = "ExposureNotifications are only supported for the main device user!";
-//							attachExceptionMessage = false;
-//						} else if (!supportsMultiAds()) {
-//							errorDetailMessage = "Bluetooth Multiple Advertisement is not supported on this device.";
-//						} else {
-//							errorDetailMessage = "This device does not support Exposure Notifications.";
-//						}
-//						break;
-//					case ExposureNotificationStatusCodes.FAILED_UNAUTHORIZED:
-//						if (!isPackageSignatureValid(context)) {
-//							errorDetailMessage = "Unauthorized package signature";
-//							attachExceptionMessage = false;
-//						} else {
-//							errorDetailMessage = "Unauthorized API usage.";
-//						}
-//						break;
-//					default:
-//						errorDetailMessage = ExposureNotificationStatusCodes.getStatusCodeString(connectionStatusCode);
-//				}
-//			}
-//		}
+		if (exception instanceof ApiException) {
+			Status status = ((ApiException) exception).getStatus();
+			if (status.getStatusCode() == 17 && status.getStatusMessage() != null) {
+				int connectionStatusCode = getConnectionStatusCode(status);
+				switch (connectionStatusCode) {
+					case ExposureNotificationStatusCodes.FAILED_NOT_SUPPORTED:
+						if (!supportsBLE(context)) {
+							errorDetailMessage = "Bluetooth Low Energy is not supported on this device.";
+							attachExceptionMessage = false;
+						} else if (!isUserDeviceOwner(context)) {
+							errorDetailMessage = "ExposureNotifications are only supported for the main device user!";
+							attachExceptionMessage = false;
+						} else if (!supportsMultiAds()) {
+							errorDetailMessage = "Bluetooth Multiple Advertisement is not supported on this device.";
+						} else {
+							errorDetailMessage = "This device does not support Exposure Notifications.";
+						}
+						break;
+					case ExposureNotificationStatusCodes.FAILED_UNAUTHORIZED:
+						if (!isPackageSignatureValid(context)) {
+							errorDetailMessage = "Unauthorized package signature";
+							attachExceptionMessage = false;
+						} else {
+							errorDetailMessage = "Unauthorized API usage.";
+						}
+						break;
+					default:
+						errorDetailMessage = ExposureNotificationStatusCodes.getStatusCodeString(connectionStatusCode);
+				}
+			}
+		}
 		if (errorDetailMessage != null) {
 			if (attachExceptionMessage) {
 				return errorDetailMessage + "\n\n" + exception.getMessage();
