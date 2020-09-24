@@ -38,7 +38,18 @@
 			</intent-filter>
 		</activity>
 
-		<activity
+        <activity
+            android:name="ch.admin.bag.dp3t.DummyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="com.google.android.gms.settings.EXPOSURE_NOTIFICATION_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
 			android:name="ch.admin.bag.dp3t.onboarding.OnboardingActivity"
 			android:launchMode="singleTop"
 			android:screenOrientation="portrait"
