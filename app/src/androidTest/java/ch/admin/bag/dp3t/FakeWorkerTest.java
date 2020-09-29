@@ -1,6 +1,8 @@
 package ch.admin.bag.dp3t;
 
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.Network;
 import android.util.Log;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -8,6 +10,8 @@ import androidx.work.*;
 import androidx.work.testing.SynchronousExecutor;
 import androidx.work.testing.TestDriver;
 import androidx.work.testing.WorkManagerTestInitHelper;
+
+import junit.framework.TestCase;
 
 import java.io.IOException;
 import java.util.List;
@@ -81,8 +85,16 @@ public class FakeWorkerTest {
 		assertTrue (SecureStorage.getInstance(context).getTDummy() > System.currentTimeMillis());
 	}
 
+	private void assertIsConnected() {
+		ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+		Network net = cm.getActiveNetwork();
+		TestCase.assertNotNull("A network connection is required for this test", net);
+	}
+
 	@Test
 	public void testCallingReportWhenScheduledIsNotPast() throws Exception {
+		assertIsConnected();
+
 		List<WorkInfo> initialWorkList = WorkManager.getInstance(context).getWorkInfosByTag(FakeWorker.WORK_TAG).get();
 		assertEquals(0, initialWorkList.size());
 
@@ -109,6 +121,8 @@ public class FakeWorkerTest {
 
 	@Test
 	public void testCallingReportWhenScheduledIsPast() throws Exception {
+		assertIsConnected();
+
 		List<WorkInfo> initialWorkList = WorkManager.getInstance(context).getWorkInfosByTag(FakeWorker.WORK_TAG).get();
 		assertEquals(0, initialWorkList.size());
 
@@ -135,6 +149,8 @@ public class FakeWorkerTest {
 
 	@Test
 	public void testCallingReportWhenScheduledIsPastErrorResponse() throws Exception {
+		assertIsConnected();
+
 		List<WorkInfo> initialWorkList = WorkManager.getInstance(context).getWorkInfosByTag(FakeWorker.WORK_TAG).get();
 		assertEquals(0, initialWorkList.size());
 
@@ -162,6 +178,8 @@ public class FakeWorkerTest {
 
 	@Test
 	public void testCallingReportWhenScheduledIs2DaysPast() throws Exception {
+		assertIsConnected();
+
 		List<WorkInfo> initialWorkList = WorkManager.getInstance(context).getWorkInfosByTag(FakeWorker.WORK_TAG).get();
 		assertEquals(0, initialWorkList.size());
 
