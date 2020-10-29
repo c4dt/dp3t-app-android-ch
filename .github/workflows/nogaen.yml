@@ -32,7 +32,7 @@ jobs:
                   unzip sdk-libs.zip -d ./app/libs/
 
             - name: Build
-              run: ./gradlew assembleProdRelease -PkeystoreFile=c4dt.store -PkeystorePassword=${{ secrets.KEYSTORE_PASSWORD }} -PkeyAliasPassword=${{ secrets.KEY_ALIAS_PASSWORD }}
+              run: ./gradlew assembleProdRelease -PkeystoreFile=c4dt.store -PkeystorePassword=${{ secrets.KEYSTORE_PASSWORD }} -PkeyAliasPassword=${{ secrets.KEY_ALIAS_PASSWORD }} -PversionNoGaen=${{ github.ref }}
 
             - name: Create release
               id: create_release

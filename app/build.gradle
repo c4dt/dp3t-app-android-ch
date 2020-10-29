@@ -41,7 +41,7 @@ android {
 		minSdkVersion 23
 		targetSdkVersion 30
 		versionCode 11200
-		versionName "1.1.2"
+		versionName "1.1.2/" + readPropertyWithDefault("versionNoGaen", "dev+nogaen")
 		resConfigs "en", "fr", "de", "it", "pt", "es", "sq", "bs", "hr", "sr", "rm", "tr", "ti"
 
 		buildConfigField "long", "BUILD_TIME", readPropertyWithDefault('buildTimestamp', System.currentTimeMillis()) + 'L'
