@@ -41,7 +41,7 @@ android {
 		minSdkVersion 23
 		targetSdkVersion 30
 		versionCode 12000
-		versionName "1.2.0"
+		versionName "1.2.0/" + readPropertyWithDefault("versionNoGaen", "dev+nogaen") + ".microG." + microgVersion
 		resConfigs "en", "fr", "de", "it", "pt", "es", "sq", "bs", "hr", "sr", "rm", "tr", "ti"
 
 		buildConfigField "long", "BUILD_TIME", readPropertyWithDefault('buildTimestamp', System.currentTimeMillis()) + 'L'
