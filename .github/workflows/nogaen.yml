@@ -1,0 +1,64 @@
+name: Version without GAEN dependencies
+
+on:
+    push:
+        tags:
+            - 'nogaen-*'
+
+jobs:
+    build:
+        name: "Build app"
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Set up JDK
+              uses: actions/setup-java@v1
+              with:
+                  java-version: 1.8
+
+            - name: Retrieve tag name
+              uses: actions/github-script@v3
+              id: get-tag
+              with:
+                  # The format for ref is `refs/tags/<tag_name>`
+                  script: return context.ref.split('/')[2]
+                  result-encoding: string
+
+            - name: Retrieve SDK release
+              uses: dsaltares/fetch-gh-release-asset@master
+              with:
+                  repo: c4dt/dp3t-sdk-android
+                  version: tags/nogaen-1-alpha1
+                  file: sdk-libs.zip
+
+            - name: Set up SDK
+              run: |
+                  rm -f ./app/libs/*
+                  unzip sdk-libs.zip -d ./app/libs/
+
+            - name: Build
+              run: ./gradlew assembleProdRelease -PkeystoreFile=c4dt.store -PkeystorePassword=${{ secrets.KEYSTORE_PASSWORD }} -PkeyAliasPassword=${{ secrets.KEY_ALIAS_PASSWORD }} -PversionNoGaen=+${{ steps.get-tag.outputs.result }}
+
+            - name: Create release
+              id: create_release
+              uses: actions/create-release@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  tag_name: ${{ github.ref }}
+                  release_name: Release ${{ github.ref }}
+                  draft: false
+                  prerelease: ${{ contains(github.ref, 'alpha') }}
+
+            - name: Upload APK as release artifact
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./app/build/outputs/apk/prod/release/app-prod-release.apk
+                  asset_name: swisscovid.apk
+                  asset_content_type: application/zip
