@@ -16,6 +16,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import androidx.work.Configuration;
 
 import java.security.PublicKey;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -37,9 +38,15 @@ import ch.admin.bag.dp3t.storage.SecureStorage;
 import ch.admin.bag.dp3t.util.ActivityLifecycleCallbacksAdapter;
 import ch.admin.bag.dp3t.util.NotificationUtil;
 
-public class MainApplication extends Application {
+public class MainApplication extends Application implements Configuration.Provider {
 
 	private static final long BACKGROUND_TIMEOUT_SESSION_MS = 30 * 60 * 1000L;
+
+    // Implementing this seems to fix a mysterious runtime error at app start...
+	@Override
+	public Configuration getWorkManagerConfiguration() {
+		return new Configuration.Builder().build();
+	}
 
 	@Override
 	public void onCreate() {

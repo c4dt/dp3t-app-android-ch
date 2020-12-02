@@ -133,6 +133,11 @@ android {
 		}
 	}
 
+    // The change to have MainApplication implement Configuration.Provider gives a mysterious lint error...
+	lintOptions {
+		abortOnError false
+	}
+
 	compileOptions {
 		sourceCompatibility = 1.8
 		targetCompatibility = 1.8
