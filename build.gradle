@@ -11,6 +11,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+	ext.microgVersion = '0.2.14.204215'
 
 	repositories {
 		google()
