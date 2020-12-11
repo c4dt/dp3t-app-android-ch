@@ -1,0 +1,104 @@
+name: Version without GAEN dependencies
+
+on:
+    push:
+        branches:
+            - 'tmp'
+
+jobs:
+    build:
+        name: "Build app using local Maven repository"
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Set up JDK
+              uses: actions/setup-java@v1
+              with:
+                  java-version: 1.8
+
+            - name: Checkout microG
+              uses: actions/checkout@v2
+              with:
+                  repository: microg/GmsCore
+                  ref: master
+                  path: microg
+                  fetch-depth: 0
+
+            - name: Retrieve microG version
+              id: get-microg-version
+              run: |
+                  cd microg
+                  version=$( git describe --tags --abbrev=7 --match='v[0-9]*' | sed -e 's/^v//' -e 's/-g\(.*\)$/ (\1)/' )
+                  echo "::set-output name=result::${version}"
+
+            - name: Build microG and publish locally
+              run: |
+                  cd microg
+                  echo "sdk.dir=${ANDROID_SDK_ROOT}" > local.properties
+                  ./gradlew publishToMavenLocal
+
+            - name: Checkout dp3t-sdk
+              uses: actions/checkout@v2
+              with:
+                  repository: c4dt/dp3t-sdk-android
+                  ref: tmp
+                  path: dp3t-sdk-android
+                  fetch-depth: 0
+
+            - name: Retrieve SDK version
+              id: get-sdk-version
+              run: |
+                  cd dp3t-sdk-android
+                  version=$( git describe --tags --match='nogaen*' | sed -e 's/-g.*$//' )
+                  echo "::set-output name=result::${version}"
+
+            - name: Build SDK and publish locally
+              run: |
+                  cd dp3t-sdk-android
+                  microgVersion="${{ steps.get-microg-version.outputs.result }}"
+                  cd dp3t-sdk
+                  sed -i "s/^\(\t*ext.microgVersion = '\).*$/\1${microgVersion}'/" build.gradle
+                  ./gradlew publishToMavenLocal -PversionNoGaen=+${{ steps.get-sdk-version.outputs.result }}
+
+            - name: Checkout app
+              uses: actions/checkout@v2
+              with:
+                  path: dp3t-app-android-ch
+                  fetch-depth: 0
+
+            - name: Retrieve app version
+              id: get-app-version
+              run: |
+                  cd dp3t-app-android-ch
+                  version=$( git describe --tags --match='nogaen*' )
+                  echo "::set-output name=result::${version}"
+
+            - name: Build app
+              run: |
+                  cd dp3t-app-android-ch
+                  microgVersion="${{ steps.get-microg-version.outputs.result }}"
+                  sed -i "s/^\(\t*ext.microgVersion = '\).*$/\1${microgVersion}'/" build.gradle
+                  sdkVersion=${{ steps.get-sdk-version.outputs.result }}
+                  sed -i "s/^\(\t*def dp3t_sdk_version = '\).*$/\12.0.0+${sdkVersion}'/" app/build.gradle
+                  ./gradlew assembleProdRelease -PkeystoreFile=c4dt.store -PkeystorePassword=${{ secrets.KEYSTORE_PASSWORD }} -PkeyAliasPassword=${{ secrets.KEY_ALIAS_PASSWORD }} -PversionNoGaen=+${{ steps.get-app-version.outputs.result }}
+
+            - name: Create release
+              id: create_release
+              uses: actions/create-release@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  tag_name: ${{ steps.get-app-version.outputs.result }}
+                  release_name: Release ${{ steps.get-app-version.outputs.result }}
+                  draft: false
+                  prerelease: ${{ contains(steps.get-app-version.outputs.result, 'alpha') }}
+
+            - name: Upload APK as release artifact
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./dp3t-app-android-ch/app/build/outputs/apk/prod/release/app-prod-release.apk
+                  asset_name: swisscovid.apk
+                  asset_content_type: application/zip
