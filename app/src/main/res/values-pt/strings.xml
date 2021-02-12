@@ -2,10 +2,10 @@
 <resources>
 
     <!-- App Name -->
-    <string name="app_name">"SwissCovid"</string>
+    <string name="app_name">"LibreCHCovid"</string>
 
     <!-- App Name (unter Icon auf iOS) -->
-    <string name="CFBundleDisplayName">"SwissCovid"</string>
+    <string name="CFBundleDisplayName">"LibreCHCovid"</string>
 
     <!-- Loading View: Erneut laden -->
     <string name="loading_view_reload">"Recarregar"</string>
@@ -291,7 +291,7 @@ Obrigado por ajudar a travar as cadeias de transmissão."</string>
     <string name="meldungen_detail_call">"Ligue-nos"</string>
 
     <!-- Meldungen Detail Text Weisse Box -->
-    <string name="meldungen_detail_call_text">"Linha informativa SwissCovid"</string>
+    <string name="meldungen_detail_call_text">"Linha informativa LibreCHCovid"</string>
 
     <!-- Meldungen Detail Weisse Box Button -->
     <string name="meldungen_detail_call_button">"Ligar agora"</string>
@@ -307,7 +307,7 @@ Obrigado por ajudar a travar as cadeias de transmissão."</string>
 
     <!-- Meldungen Detail: Weisse Box Text -->
     <string name="meldungen_detail_guard_text">"Se tiver perguntas:
-linha informativa SwissCovid
+linha informativa LibreCHCovid
 +41 58 387 77 78"</string>
 
     <!-- Meldungen Detail Button Weisse Box -->
@@ -597,7 +597,7 @@ Em caso de possível contágio, receberá uma notificação no ecrã de bloqueio
 Só será notificado se houver uma probabilidade razoável de contágio."</string>
 
     <!-- Meldungen Detail Weisse Box Texte Unten -->
-    <string name="meldungen_detail_explanation_text3">"A linha informativa SwissCovid aconselha-o sobre um possível teste gratuito."</string>
+    <string name="meldungen_detail_explanation_text3">"A linha informativa LibreCHCovid aconselha-o sobre um possível teste gratuito."</string>
 
     <!-- Meldungen: Meldungen FAQ -->
     <string name="meldungen_meldungen_faq1_title">"Tenho de ligar?"</string>
@@ -639,7 +639,7 @@ Nesse caso, contacte a linha informativa coronavírus:"</string>
     <!-- Inform Detail FAQ Text -->
     <string name="inform_detail_faq2_text">"Só são enviados os IDs aleatórios da sua app e nunca dados pessoais.
 
-Desta forma, outros utilizadores da app SwissCovid ficam a saber que existe a possibilidade de um contágio."</string>
+Desta forma, outros utilizadores da app LibreCHCovid ficam a saber que existe a possibilidade de um contágio."</string>
 
     <!-- Telefonnummer der Infoline -->
     <string name="infoline_tel_number">"+41 58 387 77 78"</string>
@@ -679,7 +679,7 @@ Desta forma, outros utilizadores da app SwissCovid ficam a saber que existe a po
     <string name="language_key">"pt"</string>
 
     <!-- Meldungen Homescreen: Name Hotline -->
-    <string name="exposed_info_contact_hotline_name">"linha informativa SwissCovid"</string>
+    <string name="exposed_info_contact_hotline_name">"linha informativa LibreCHCovid"</string>
 
     <!-- Meldung Detail: "Noch 1 Tag" Label -->
     <string name="date_in_one_day">"Mais 1 dia"</string>
@@ -773,7 +773,7 @@ Desta forma, outros utilizadores da app SwissCovid ficam a saber que existe a po
     <string name="tracing_permission_error_text_ios">"Ative a função Notificações de exposição à COVID-19 para que o rastreamento funcione."</string>
 
     <!-- Error-Meldung, wenn der Benutzer während des Informieren-Flows bei GApple das Key-Sharing nicht erlaubt. -->
-    <string name="user_cancelled_key_sharing_error">"A mensagem não foi enviada. Por favor, autorize a partilha dos seus dados de IDs aleatórios com a app SwissCovid."</string>
+    <string name="user_cancelled_key_sharing_error">"A mensagem não foi enviada. Por favor, autorize a partilha dos seus dados de IDs aleatórios com a app LibreCHCovid."</string>
 
     <!-- Button um die Google Play Services zu aktualisieren -->
     <string name="playservices_update">"Atualizar"</string>
@@ -809,10 +809,10 @@ Se não houver de momento nenhuma atualização disponível no seu dispositivo, 
     <string name="synchronizations_view_info_answer">"A app verifica periodicamente os IDs aleatórios divulgados por utilizadores que testaram positivo."</string>
     <string name="synchronizations_view_period_title">"Nos últimos 14 dias"</string>
     <string name="synchronizations_view_empty_list">"Nenhum registo"</string>
-    <string name="tracing_active_tracking_always_info">"A SwissCovid mantém-se ativa, mesmo quando a app é desligada."</string>
+    <string name="tracing_active_tracking_always_info">"A LibreCHCovid mantém-se ativa, mesmo quando a app é desligada."</string>
 
     <!-- title in splash screen of onboarding -->
-    <string name="oboarding_splashscreen_title">"A SwissCovid 
+    <string name="oboarding_splashscreen_title">"A LibreCHCovid 
 trava as 
 cadeias de transmissão."</string>
     <string name="inform_detail_faq3_text">"Embora não sejam enviados dados pessoais seus, é possível que alguém se recorde de um contacto consigo pela data."</string>
@@ -828,7 +828,7 @@ cadeias de transmissão."</string>
     <string name="onboarding_gaen_text_android">"Para poder usar a app, tem de ativar a função Notificações de exposição à COVID-19."</string>
 
     <!-- Onboarding Disclaimer Screen: AppName Title -->
-    <string name="onboarding_disclaimer_heading">"SwissCovid"</string>
+    <string name="onboarding_disclaimer_heading">"LibreCHCovid"</string>
 
     <!-- Onboarding Disclaimer Screen: Title -->
     <string name="onboarding_disclaimer_title">"Instruções de utilização"</string>
@@ -848,7 +848,7 @@ Schwarzenburgstrasse 157
 3097 Liebefeld, Schweiz"</string>
 
     <!-- Onboarding Disclaimer Screen: App version title -->
-    <string name="onboarding_disclaimer_app_version">"SwissCovid App Version"</string>
+    <string name="onboarding_disclaimer_app_version">"LibreCHCovid App Version"</string>
 
     <!-- Onboarding Disclaimer Screen: Release version title -->
     <string name="onboarding_disclaimer_release_version">"Release Date:"</string>
@@ -884,7 +884,7 @@ Schwarzenburgstrasse 157
     <string name="meldungen_detail_free_test_title">"Possibilidade de teste gratuito"</string>
 
     <!-- Meldungen Detail Kostenloser Test Box Text -->
-    <string name="meldungen_detail_free_test_text">"O guia da SwissCovid informa-o sobre a possibilidade de um teste gratuito ao coronavírus."</string>
+    <string name="meldungen_detail_free_test_text">"O guia da LibreCHCovid informa-o sobre a possibilidade de um teste gratuito ao coronavírus."</string>
 
     <!-- Button title on the Home Screen when the Tracing is deactivated to directly activate it. -->
     <string name="activate_tracing_button">"Ativar o rastreamento"</string>
@@ -975,19 +975,19 @@ Schwarzenburgstrasse 157
 
     <!-- Text beim Bluetooth Control iOS 14 -->
     <string name="tracing_setting_text_ios_14_0">"Notificações de exposição"</string>
-    <string name="bottom_nav_tab_home">"SwissCovid"</string>
+    <string name="bottom_nav_tab_home">"LibreCHCovid"</string>
     <string name="bottom_nav_tab_stats">"Números"</string>
-    <string name="stats_title">"já utilizam a SwissCovid"</string>
+    <string name="stats_title">"já utilizam a LibreCHCovid"</string>
     <string name="stats_legend_new_infections">"Novos casos de infeção registados"</string>
     <string name="stats_legend_new_infections_average">"Média de 7 dias"</string>
     <string name="stats_legend_entered_covidcodes">"Códigos COVID introduzidos"</string>
     <string name="share_app_supertitle">"Juntos…"</string>
     <string name="share_app_title">"prevenimos o contágio "</string>
     <string name="share_app_button">"Partilhar a app"</string>
-    <string name="share_app_body">"Quanto mais pessoas ativarem a app SwissCovid, mais cedo conseguiremos interromper as cadeias de transmissão."</string>
+    <string name="share_app_body">"Quanto mais pessoas ativarem a app LibreCHCovid, mais cedo conseguiremos interromper as cadeias de transmissão."</string>
 
     <!-- Text der geteilt wird -->
-    <string name="share_app_message">"Quanto mais pessoas ativarem a app SwissCovid, mais cedo conseguiremos interromper as cadeias de transmissão."</string>
+    <string name="share_app_message">"Quanto mais pessoas ativarem a app LibreCHCovid, mais cedo conseguiremos interromper as cadeias de transmissão."</string>
 
     <!-- URL die geteilt wird -->
     <string name="share_app_url">"https://bag-coronavirus.ch/swisscovid-app/#download"</string>
@@ -1032,7 +1032,7 @@ Schwarzenburgstrasse 157
     <string name="ios_settings_tutorial_step_3_share_exposure_information">"Partilhar informações de contactos"</string>
 
     <!-- iOS settings tutorial schritt 4 -->
-    <string name="ios_settings_tutorial_step_4_text">"Se ainda não o tiver feito, pode agora definir a SwissCovid como região ativa."</string>
+    <string name="ios_settings_tutorial_step_4_text">"Se ainda não o tiver feito, pode agora definir a LibreCHCovid como região ativa."</string>
 
     <!-- iOS settings tutorial set as aktive region wie in iOS settings -->
     <string name="ios_settings_tutorial_step_4_set_as_aktive_region">"Definir como região ativa"</string>
@@ -1052,37 +1052,37 @@ Schwarzenburgstrasse 157
     <!-- Button Titel im Meldung Detail Header, wenn alle Meldungen angezeigt werden. -->
     <string name="meldung_detail_exposed_show_less_button">"Mostrar menos"</string>
 
-    <!-- Titel vom SwissCovid Leitfaden bei Kontaktmeldung -->
-    <string name="meldungen_detail_leitfaden_title">"Guia da SwissCovid"</string>
+    <!-- Titel vom LibreCHCovid Leitfaden bei Kontaktmeldung -->
+    <string name="meldungen_detail_leitfaden_title">"Guia da LibreCHCovid"</string>
 
-    <!-- Text zum SwissCovid Leitfaden bei Kontaktmeldung -->
-    <string name="meldungen_detail_leitfaden_text">"Responda às perguntas no guia da SwissCovid e saiba como proceder corretamente."</string>
+    <!-- Text zum LibreCHCovid Leitfaden bei Kontaktmeldung -->
+    <string name="meldungen_detail_leitfaden_text">"Responda às perguntas no guia da LibreCHCovid e saiba como proceder corretamente."</string>
 
-    <!-- Button Text zum Öffnen vom SwissCovid Leitfaden -->
+    <!-- Button Text zum Öffnen vom LibreCHCovid Leitfaden -->
     <string name="meldungen_detail_open_leitfaden_button">"Preencher agora"</string>
 
-    <!-- Title für Infotext zu SwissCovid Infoline -->
+    <!-- Title für Infotext zu LibreCHCovid Infoline -->
     <string name="meldungen_tel_information_title">"Informações por telefone"</string>
 
-    <!-- Infotext zu SwissCovid Infoline -->
-    <string name="meldungen_tel_information_text">"Se tiver perguntas, poderá também obter informações através da linha informativa da SwissCovid."</string>
+    <!-- Infotext zu LibreCHCovid Infoline -->
+    <string name="meldungen_tel_information_text">"Se tiver perguntas, poderá também obter informações através da linha informativa da LibreCHCovid."</string>
 
-    <!-- Hinweis Text nach dem Ausfüllen vom SwissCovid Leitfaden, dass man erneut ausfüllen kann -->
-    <string name="meldungen_detail_leitfaden_again_text">"Abra aqui o guia da SwissCovid sempre que quiser."</string>
+    <!-- Hinweis Text nach dem Ausfüllen vom LibreCHCovid Leitfaden, dass man erneut ausfüllen kann -->
+    <string name="meldungen_detail_leitfaden_again_text">"Abra aqui o guia da LibreCHCovid sempre que quiser."</string>
 
-    <!-- Button Text um SwissCovid Leitfaden erneut zu öffnen -->
-    <string name="meldungen_detail_open_leitfaden_again_button">"Abrir o guia da SwissCovid"</string>
+    <!-- Button Text um LibreCHCovid Leitfaden erneut zu öffnen -->
+    <string name="meldungen_detail_open_leitfaden_again_button">"Abrir o guia da LibreCHCovid"</string>
 
-    <!-- Homescreen Text mit Hinweis zu SwissCovid Leitfaden bei einer Meldung -->
+    <!-- Homescreen Text mit Hinweis zu LibreCHCovid Leitfaden bei einer Meldung -->
     <string name="exposed_info_answer_questions_in_leitfaden">"Responda às perguntas no"</string>
 
-    <!-- Homescreen Text mit Hinweis zu SwissCovid Leitfaden bei einer Meldung -->
-    <string name="exposed_info_swisscovid_leitfaden">"guia da SwissCovid"</string>
+    <!-- Homescreen Text mit Hinweis zu LibreCHCovid Leitfaden bei einer Meldung -->
+    <string name="exposed_info_swisscovid_leitfaden">"guia da LibreCHCovid"</string>
 
     <!-- Dialog Text beim Löschen einer Meldung über einen möglichen Kontakt -->
-    <string name="delete_notification_dialog">"A notificação sobre um possível contágio constitui um comprovativo de que necessitará para fazer um teste gratuito ao coronavírus. Se a apagar, perde o comprovativo e a ligação ao guia da SwissCovid."</string>
+    <string name="delete_notification_dialog">"A notificação sobre um possível contágio constitui um comprovativo de que necessitará para fazer um teste gratuito ao coronavírus. Se a apagar, perde o comprovativo e a ligação ao guia da LibreCHCovid."</string>
 
-    <!-- URL to the SwissCovid Leitfaden -->
+    <!-- URL to the LibreCHCovid Leitfaden -->
     <string name="swisscovid_leitfaden_url">"https://swisscovid.foph-coronavirus.ch/screening?contactDates={CONTACT_DATES}"</string>
 
     <!-- Tracing Erinnerung 4 Stunden Radio Button -->
@@ -1107,7 +1107,7 @@ Schwarzenburgstrasse 157
     <string name="tracing_reminder_title">"Definir lembrete"</string>
 
     <!-- Tracing Erinnerung Untertitel -->
-    <string name="tracing_reminder_subtitle">"A SwissCovid poderá lembrá-lo de reativar o rastreamento."</string>
+    <string name="tracing_reminder_subtitle">"A LibreCHCovid poderá lembrá-lo de reativar o rastreamento."</string>
 
     <!-- Tracing Erinnerung Warnung -->
     <string name="tracing_reminder_warning">"O rastreamento será desativado."</string>
@@ -1212,7 +1212,7 @@ Schwarzenburgstrasse 157
     <string name="ios_software_update_blocking_title">"É necessário atualizar o software"</string>
 
     <!-- iOS Blockierende View bei benötigten OS update: text -->
-    <string name="ios_software_update_blocking_text">"Para que a SwissCovid funcione, necessita de instalar a última versão do iOS."</string>
+    <string name="ios_software_update_blocking_text">"Para que a LibreCHCovid funcione, necessita de instalar a última versão do iOS."</string>
 
     <!-- iOS Blockierende View bei benötigten OS update: Tutorial title -->
     <string name="ios_software_update_blocking_tutorial_title">"Funciona assim:"</string>
@@ -1248,7 +1248,7 @@ Schwarzenburgstrasse 157
     <string name="ios_software_update_notification_title">"É necessário atualizar o software"</string>
 
     <!-- iOS Notification Text bei benötigten OS update -->
-    <string name="ios_software_update_notification_text">"Para que a SwissCovid funcione, necessita de instalar a última versão do iOS."</string>
+    <string name="ios_software_update_notification_text">"Para que a LibreCHCovid funcione, necessita de instalar a última versão do iOS."</string>
 
     <!-- Button Text um die Isolation zu beenden -->
     <string name="delete_infection_dialog_finish_button">"Finalizar"</string>
