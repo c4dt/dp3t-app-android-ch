@@ -11,9 +11,14 @@ package ch.admin.bag.dp3t.onboarding;
 
 import android.animation.Animator;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
@@ -30,10 +35,51 @@ public class OnboardingActivity extends FragmentActivity {
 	private ViewPager2 viewPager;
 	private FragmentStateAdapter pagerAdapter;
 
+	private boolean isGmsInstalled() {
+		PackageManager pm = this.getPackageManager();
+
+		for (PackageInfo pi: pm.getInstalledPackages(0)) {
+			if (pi.packageName.equals("com.google.android.gms")) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	private void checkGms() {
+		final String TAG = "NoGAEN";
+		int titleId;
+		int messageId;
+
+		if (isGmsInstalled()) {
+			Log.d(TAG, "GMS is installed on device");
+			titleId = R.string.nogaenalert_title_gms_on_device;
+			messageId = R.string.nogaenalert_msg_gms_on_device;
+		} else {
+			Log.d(TAG, "GMS is not installed on device");
+			titleId = R.string.nogaenalert_title_no_gms;
+			messageId = R.string.nogaenalert_msg_no_gms;
+		}
+
+		new AlertDialog.Builder(this, R.style.NextStep_AlertDialogStyle)
+				.setTitle(titleId)
+				.setMessage(messageId)
+				.setIcon(R.drawable.ic_warning_red)
+				.setCancelable(false)
+				.setPositiveButton(R.string.nogaenalert_positive_btn, null)
+				.setNegativeButton(R.string.nogaenalert_negative_btn, (view, arg) -> {
+					finishAndRemoveTask();
+				}).create().show();
+
+	}
+
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_onboarding);
+
+		checkGms();
 
 		splashboarding = findViewById(R.id.splashboarding);
 		viewPager = findViewById(R.id.pager);

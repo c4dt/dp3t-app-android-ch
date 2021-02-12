@@ -1308,4 +1308,18 @@ Tracing can be reactivated after isolation."</string>
     <!-- Fuzzy -->
     <string name="testlocation_url_canton_zurich">"https://www.zh.ch/de/gesundheit/coronavirus.html"</string>
     <string name="testlocation_url_country_liechtenstein">"https://www.llv.li/inhalt/118724/amtsstellen/coronavirus"</string>
+
+    <!-- NoGAEN -->
+    <string name="nogaenalert_title_gms_on_device">"GMS on device"</string>
+    <string name="nogaenalert_msg_gms_on_device">"Google Mobile Services are installed on your device.
+
+In this case, it is recommended to use the official SwissCovid application.
+
+This version has been modified to run on devices without GMS and <b>is not officially supported by the Swiss authorities</b>."</string>
+    <string name="nogaenalert_title_no_gms">"Unofficial app"</string>
+    <string name="nogaenalert_msg_no_gms">"This application is not the official SwissCovid application.
+
+It has been modified to run on devices without GMS and <b>is not officially supported by the Swiss authorities</b>."</string>
+    <string name="nogaenalert_positive_btn">"I understand"</string>
+    <string name="nogaenalert_negative_btn">"Exit app"</string>
 </resources>
