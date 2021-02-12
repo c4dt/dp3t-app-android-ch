@@ -95,8 +95,8 @@ public class ReportsFragment extends Fragment {
 		Button openSwisscovidLeitfadenButton1 = leitfadenView.findViewById(R.id.card_encounters_button);
 		Button openSwisscovidLeitfadenButton2 = saveOthersView.findViewById(R.id.card_encounters_button);
 
-		openSwisscovidLeitfadenButton1.setOnClickListener(view1 -> openSwissCovidLeitfaden());
-		openSwisscovidLeitfadenButton2.setOnClickListener(view1 -> openSwissCovidLeitfaden());
+		openSwisscovidLeitfadenButton1.setOnClickListener(view1 -> openLibreCHovidLeitfaden());
+		openSwisscovidLeitfadenButton2.setOnClickListener(view1 -> openLibreCHovidLeitfaden());
 
 		View callHotlineButton1 = leitfadenView.findViewById(R.id.item_call_hotline_layout);
 		View callHotlineButton2 = saveOthersView.findViewById(R.id.item_call_hotline_layout);
@@ -202,7 +202,7 @@ public class ReportsFragment extends Fragment {
 		UrlUtil.openUrl(getContext(), getString(R.string.faq_button_url));
 	}
 
-	private void openSwissCovidLeitfaden() {
+	private void openLibreCHovidLeitfaden() {
 		leitfadenJustOpened = true;
 		secureStorage.leitfadenOpened();
 		List<ExposureDay> exposureDays = tracingViewModel.getAppStatusLiveData().getValue().getExposureDays();

@@ -2,10 +2,10 @@
 <resources>
 
     <!-- App Name -->
-    <string name="app_name">"SwissCovid"</string>
+    <string name="app_name">"LibreCHovid"</string>
 
     <!-- App Name (unter Icon auf iOS) -->
-    <string name="CFBundleDisplayName">"SwissCovid"</string>
+    <string name="CFBundleDisplayName">"LibreCHovid"</string>
 
     <!-- Loading View: Erneut laden -->
     <string name="loading_view_reload">"Yeniden yükle"</string>
@@ -287,7 +287,7 @@
     <string name="meldungen_detail_call">"Bizi arayın"</string>
 
     <!-- Meldungen Detail Text Weisse Box -->
-    <string name="meldungen_detail_call_text">"SwissCovid Bilgi Hattı"</string>
+    <string name="meldungen_detail_call_text">"LibreCHovid Bilgi Hattı"</string>
 
     <!-- Meldungen Detail Weisse Box Button -->
     <string name="meldungen_detail_call_button">"Şimdi arayın"</string>
@@ -302,7 +302,7 @@
     <string name="meldungen_detail_explanation_text2">"Lütfen ailenizi, arkadaşlarınızı ve çevrenizdekileri koruyun. Olası bir enfeksiyon halinde 10 gün boyunca temastan kaçının."</string>
 
     <!-- Meldungen Detail: Weisse Box Text -->
-    <string name="meldungen_detail_guard_text">"Sorularınız için: SwissCovid Bilgi Hattı +41 58 387 77 78"</string>
+    <string name="meldungen_detail_guard_text">"Sorularınız için: LibreCHovid Bilgi Hattı +41 58 387 77 78"</string>
 
     <!-- Meldungen Detail Button Weisse Box -->
     <string name="meldungen_detail_call_again_button">"Yeniden ara"</string>
@@ -320,7 +320,7 @@
     <string name="onboarding_prinzip_title">"Virüsün bir adım önünde"</string>
 
     <!-- Onboarding Prinzip Text -->
-    <string name="onboarding_prinzip_text1">"SwissCovid uygulaması ile yeni Korona virüsünün yayılımını sınırlandırmaya yardımcı olabilirsiniz."</string>
+    <string name="onboarding_prinzip_text1">"LibreCHovid uygulaması ile yeni Korona virüsünün yayılımını sınırlandırmaya yardımcı olabilirsiniz."</string>
 
     <!-- Onboarding Prinzip Text -->
     <string name="onboarding_prinzip_text2">"Korona virüsü ile potansiyel temaslarda uygulama sizi bilgilendirir."</string>
@@ -583,7 +583,7 @@ Olası bir enfeksiyon riskinde kilit ekranında bir mesaj ile bilgilendirileceks
 Yalnızca bulaşma riski yeterince büyük ise bilgilendirilirsiniz."</string>
 
     <!-- Meldungen Detail Weisse Box Texte Unten -->
-    <string name="meldungen_detail_explanation_text3">"SwissCovid Bilgi Hattı sizi ücretsiz testler konusunda bilgilendirir."</string>
+    <string name="meldungen_detail_explanation_text3">"LibreCHovid Bilgi Hattı sizi ücretsiz testler konusunda bilgilendirir."</string>
 
     <!-- Meldungen: Meldungen FAQ -->
     <string name="meldungen_meldungen_faq1_title">"Aramam mı gerekiyor?"</string>
@@ -620,7 +620,7 @@ Bu durumda, Corona Virüs Bilgi Hattı (Infoline) ile iletişime geçiniz:"</str
 
     <!-- Inform Detail FAQ Text -->
     <string name="inform_detail_faq2_text">"Şahsi bilgileriniz değil, uygulamanızın yalnızca rastgele ID'leri iletilir. 
-Bu şekilde diğer SwissCovid uygulaması kullanıcıları yalnızca bir bulaşma riski olabileceğini öğenir."</string>
+Bu şekilde diğer LibreCHovid uygulaması kullanıcıları yalnızca bir bulaşma riski olabileceğini öğenir."</string>
 
     <!-- Telefonnummer der Infoline -->
     <string name="infoline_tel_number">"+41 58 387 77 78"</string>
@@ -660,7 +660,7 @@ Bu şekilde diğer SwissCovid uygulaması kullanıcıları yalnızca bir bulaşm
     <string name="language_key">"tr"</string>
 
     <!-- Meldungen Homescreen: Name Hotline -->
-    <string name="exposed_info_contact_hotline_name">"SwissCovid Bilgi Hattı"</string>
+    <string name="exposed_info_contact_hotline_name">"LibreCHovid Bilgi Hattı"</string>
 
     <!-- Meldung Detail: "Noch 1 Tag" Label -->
     <string name="date_in_one_day">"Bir gün daha"</string>
@@ -751,7 +751,7 @@ Bu şekilde diğer SwissCovid uygulaması kullanıcıları yalnızca bir bulaşm
     <string name="tracing_permission_error_text_ios">"Takibin çalışabilmesi için KOVİD-19 iletişim mesajlarının etkinleştirilmesi gerekmektedir."</string>
 
     <!-- Error-Meldung, wenn der Benutzer während des Informieren-Flows bei GApple das Key-Sharing nicht erlaubt. -->
-    <string name="user_cancelled_key_sharing_error">"Mesaj iletilemedi. Lütfen rastgele ID'lerinizin SwissCovid uygulaması ile paylaşılmasına izin verin."</string>
+    <string name="user_cancelled_key_sharing_error">"Mesaj iletilemedi. Lütfen rastgele ID'lerinizin LibreCHovid uygulaması ile paylaşılmasına izin verin."</string>
 
     <!-- Button um die Google Play Services zu aktualisieren -->
     <string name="playservices_update">"Güncelle"</string>
@@ -787,10 +787,10 @@ Bu şekilde diğer SwissCovid uygulaması kullanıcıları yalnızca bir bulaşm
     <string name="synchronizations_view_info_answer">"Uygulama düzenli olarak pozitif test edilmiş kişilerin yayınladığı rastgele ID'leri kontrol eder."</string>
     <string name="synchronizations_view_period_title">"Son 14 gün içerisinde"</string>
     <string name="synchronizations_view_empty_list">"Giriş yoktur"</string>
-    <string name="tracing_active_tracking_always_info">"SwissCovid uygulama kapatıldığında da aktiftir."</string>
+    <string name="tracing_active_tracking_always_info">"LibreCHovid uygulama kapatıldığında da aktiftir."</string>
 
     <!-- title in splash screen of onboarding -->
-    <string name="oboarding_splashscreen_title">"SwissCovid enfeksiyon zincirlerini kırar."</string>
+    <string name="oboarding_splashscreen_title">"LibreCHovid enfeksiyon zincirlerini kırar."</string>
     <string name="inform_detail_faq3_text">"Kişisel bilgileriniz iletilmese dahi, bazı kişiler tarihler temelinde sizinle olan teması hatırlayabilirler."</string>
     <string name="inform_detail_faq3_title">"Bilgilerim anonim mi?"</string>
 
@@ -804,7 +804,7 @@ Bu şekilde diğer SwissCovid uygulaması kullanıcıları yalnızca bir bulaşm
     <string name="onboarding_gaen_text_android">"Uygulamanın kullanılabilmesi için KOVİD-19 bildirimlerinin etkinleştirilmiş olması gerekmektedir."</string>
 
     <!-- Onboarding Disclaimer Screen: AppName Title -->
-    <string name="onboarding_disclaimer_heading">"SwissCovid"</string>
+    <string name="onboarding_disclaimer_heading">"LibreCHovid"</string>
 
     <!-- Onboarding Disclaimer Screen: Title -->
     <string name="onboarding_disclaimer_title">"Kullanıma ilişkin bilgiler"</string>
@@ -824,7 +824,7 @@ Schwarzenburgstrasse 157
 3097 Liebefeld, İzviçre"</string>
 
     <!-- Onboarding Disclaimer Screen: App version title -->
-    <string name="onboarding_disclaimer_app_version">"SwissCovid App Version"</string>
+    <string name="onboarding_disclaimer_app_version">"LibreCHovid App Version"</string>
 
     <!-- Onboarding Disclaimer Screen: Release version title -->
     <string name="onboarding_disclaimer_release_version">"Release Date:"</string>
@@ -860,7 +860,7 @@ Schwarzenburgstrasse 157
     <string name="meldungen_detail_free_test_title">"Ücretsiz test olma"</string>
 
     <!-- Meldungen Detail Kostenloser Test Box Text -->
-    <string name="meldungen_detail_free_test_text">"SwissCovid Kılavuzu, ücretsiz Corona virüs testi imkanları hakkında sizi bilgilendirecektir."</string>
+    <string name="meldungen_detail_free_test_text">"LibreCHovid Kılavuzu, ücretsiz Corona virüs testi imkanları hakkında sizi bilgilendirecektir."</string>
 
     <!-- Button title on the Home Screen when the Tracing is deactivated to directly activate it. -->
     <string name="activate_tracing_button">"Takibi etkinleştir"</string>
@@ -951,19 +951,19 @@ Schwarzenburgstrasse 157
 
     <!-- Text beim Bluetooth Control iOS 14 -->
     <string name="tracing_setting_text_ios_14_0">"Maruz Kalma Bildirimleri"</string>
-    <string name="bottom_nav_tab_home">"SwissCovid"</string>
+    <string name="bottom_nav_tab_home">"LibreCHovid"</string>
     <string name="bottom_nav_tab_stats">"Kişi sayısı"</string>
-    <string name="stats_title">"SwissCovid uygulamasını kullanmakta olan"</string>
+    <string name="stats_title">"LibreCHovid uygulamasını kullanmakta olan"</string>
     <string name="stats_legend_new_infections">"Bildirilen yeni enfeksiyonlar"</string>
     <string name="stats_legend_new_infections_average">"7 günlük ortalama"</string>
     <string name="stats_legend_entered_covidcodes">"Girilen Covid kodları"</string>
     <string name="share_app_supertitle">"Birlikte…"</string>
     <string name="share_app_title">"Bulaşma riskini ortadan kaldıralım. "</string>
     <string name="share_app_button">"Uygulamayı paylaş"</string>
-    <string name="share_app_body">"SwissCovid uygulaması ne kadar çok kişi tarafından kullanılırsa, enfeksiyon zinciri o kadar erken kırılabilir."</string>
+    <string name="share_app_body">"LibreCHovid uygulaması ne kadar çok kişi tarafından kullanılırsa, enfeksiyon zinciri o kadar erken kırılabilir."</string>
 
     <!-- Text der geteilt wird -->
-    <string name="share_app_message">"SwissCovid uygulaması ne kadar çok kişi tarafından kullanılırsa, enfeksiyon zinciri o kadar erken kırılabilir."</string>
+    <string name="share_app_message">"LibreCHovid uygulaması ne kadar çok kişi tarafından kullanılırsa, enfeksiyon zinciri o kadar erken kırılabilir."</string>
 
     <!-- URL die geteilt wird -->
     <string name="share_app_url">"https://bag-coronavirus.ch/swisscovid-app/#download"</string>
@@ -1008,7 +1008,7 @@ Schwarzenburgstrasse 157
     <string name="ios_settings_tutorial_step_3_share_exposure_information">"Temas bilgilerini paylaş"</string>
 
     <!-- iOS settings tutorial schritt 4 -->
-    <string name="ios_settings_tutorial_step_4_text">"Henüz belirlemediyseniz, SwissCovid'i geçerli bölge olarak tanımlayabilirsiniz."</string>
+    <string name="ios_settings_tutorial_step_4_text">"Henüz belirlemediyseniz, LibreCHovid'i geçerli bölge olarak tanımlayabilirsiniz."</string>
 
     <!-- iOS settings tutorial set as aktive region wie in iOS settings -->
     <string name="ios_settings_tutorial_step_4_set_as_aktive_region">"Geçerli bölge olarak tanımla"</string>
@@ -1028,37 +1028,37 @@ Schwarzenburgstrasse 157
     <!-- Button Titel im Meldung Detail Header, wenn alle Meldungen angezeigt werden. -->
     <string name="meldung_detail_exposed_show_less_button">"Daha azını göster"</string>
 
-    <!-- Titel vom SwissCovid Leitfaden bei Kontaktmeldung -->
-    <string name="meldungen_detail_leitfaden_title">"SwissCovid Kılavuzu"</string>
+    <!-- Titel vom LibreCHovid Leitfaden bei Kontaktmeldung -->
+    <string name="meldungen_detail_leitfaden_title">"LibreCHovid Kılavuzu"</string>
 
-    <!-- Text zum SwissCovid Leitfaden bei Kontaktmeldung -->
-    <string name="meldungen_detail_leitfaden_text">"Nasıl doğru şekilde hareket edeceğinizi öğrenmek için SwissCovid Kılavuzu'ndaki soruları yanıtlayın."</string>
+    <!-- Text zum LibreCHovid Leitfaden bei Kontaktmeldung -->
+    <string name="meldungen_detail_leitfaden_text">"Nasıl doğru şekilde hareket edeceğinizi öğrenmek için LibreCHovid Kılavuzu'ndaki soruları yanıtlayın."</string>
 
-    <!-- Button Text zum Öffnen vom SwissCovid Leitfaden -->
+    <!-- Button Text zum Öffnen vom LibreCHovid Leitfaden -->
     <string name="meldungen_detail_open_leitfaden_button">"Şimdi doldurun"</string>
 
-    <!-- Title für Infotext zu SwissCovid Infoline -->
+    <!-- Title für Infotext zu LibreCHovid Infoline -->
     <string name="meldungen_tel_information_title">"Telefon İle Danışma"</string>
 
-    <!-- Infotext zu SwissCovid Infoline -->
-    <string name="meldungen_tel_information_text">"Başka sorularınızın olması halinde, SwissCovid Bilgi hattı (Infoline) size telefon yoluyla da bilgi vermekten memnuniyet duyacaktır."</string>
+    <!-- Infotext zu LibreCHovid Infoline -->
+    <string name="meldungen_tel_information_text">"Başka sorularınızın olması halinde, LibreCHovid Bilgi hattı (Infoline) size telefon yoluyla da bilgi vermekten memnuniyet duyacaktır."</string>
 
-    <!-- Hinweis Text nach dem Ausfüllen vom SwissCovid Leitfaden, dass man erneut ausfüllen kann -->
-    <string name="meldungen_detail_leitfaden_again_text">"SwissCovid Kılavuzu'nu dilediğiniz zaman buradan yeniden açabilirsiniz."</string>
+    <!-- Hinweis Text nach dem Ausfüllen vom LibreCHovid Leitfaden, dass man erneut ausfüllen kann -->
+    <string name="meldungen_detail_leitfaden_again_text">"LibreCHovid Kılavuzu'nu dilediğiniz zaman buradan yeniden açabilirsiniz."</string>
 
-    <!-- Button Text um SwissCovid Leitfaden erneut zu öffnen -->
+    <!-- Button Text um LibreCHovid Leitfaden erneut zu öffnen -->
     <string name="meldungen_detail_open_leitfaden_again_button">"Kılavuz için"</string>
 
-    <!-- Homescreen Text mit Hinweis zu SwissCovid Leitfaden bei einer Meldung -->
+    <!-- Homescreen Text mit Hinweis zu LibreCHovid Leitfaden bei einer Meldung -->
     <string name="exposed_info_answer_questions_in_leitfaden">"Soruları yanıtlayın"</string>
 
-    <!-- Homescreen Text mit Hinweis zu SwissCovid Leitfaden bei einer Meldung -->
-    <string name="exposed_info_swisscovid_leitfaden">"SwissCovid Kılavuzu"</string>
+    <!-- Homescreen Text mit Hinweis zu LibreCHovid Leitfaden bei einer Meldung -->
+    <string name="exposed_info_swisscovid_leitfaden">"LibreCHovid Kılavuzu"</string>
 
     <!-- Dialog Text beim Löschen einer Meldung über einen möglichen Kontakt -->
-    <string name="delete_notification_dialog">"Muhtemel bir enfeksiyon bildirimi, ücretsiz Corona virüs testi yaptırmanız gerektiğinin kanıtı niteliğindedir. Bu bildirimi silerseniz, bu kanıtı ve SwissCovid Kılavuz bağlantısını kaybetmiş olursunuz."</string>
+    <string name="delete_notification_dialog">"Muhtemel bir enfeksiyon bildirimi, ücretsiz Corona virüs testi yaptırmanız gerektiğinin kanıtı niteliğindedir. Bu bildirimi silerseniz, bu kanıtı ve LibreCHovid Kılavuz bağlantısını kaybetmiş olursunuz."</string>
 
-    <!-- URL to the SwissCovid Leitfaden -->
+    <!-- URL to the LibreCHovid Leitfaden -->
     <string name="swisscovid_leitfaden_url">"https://swisscovid.foph-coronavirus.ch/screening?contactDates={CONTACT_DATES}"</string>
 
     <!-- Tracing Erinnerung 4 Stunden Radio Button -->
@@ -1083,7 +1083,7 @@ Schwarzenburgstrasse 157
     <string name="tracing_reminder_title">"Anımsatıcı kur"</string>
 
     <!-- Tracing Erinnerung Untertitel -->
-    <string name="tracing_reminder_subtitle">"SwissCovid, izlemeyi yeniden etkinleştirmeyi size anımsatabilir."</string>
+    <string name="tracing_reminder_subtitle">"LibreCHovid, izlemeyi yeniden etkinleştirmeyi size anımsatabilir."</string>
 
     <!-- Tracing Erinnerung Warnung -->
     <string name="tracing_reminder_warning">"İzleme devre dışı bırakılıyor."</string>
@@ -1188,7 +1188,7 @@ Schwarzenburgstrasse 157
     <string name="ios_software_update_blocking_title">"Yazılım güncellemesi gerekli"</string>
 
     <!-- iOS Blockierende View bei benötigten OS update: text -->
-    <string name="ios_software_update_blocking_text">"SwissCovid'in çalışması için, en güncel iOS sürümünü kurmanız gerekiyor."</string>
+    <string name="ios_software_update_blocking_text">"LibreCHovid'in çalışması için, en güncel iOS sürümünü kurmanız gerekiyor."</string>
 
     <!-- iOS Blockierende View bei benötigten OS update: Tutorial title -->
     <string name="ios_software_update_blocking_tutorial_title">"Çalıştırmak için:"</string>
@@ -1224,7 +1224,7 @@ Schwarzenburgstrasse 157
     <string name="ios_software_update_notification_title">"Yazılım güncellemesi gerekli"</string>
 
     <!-- iOS Notification Text bei benötigten OS update -->
-    <string name="ios_software_update_notification_text">"SwissCovid'in çalışması için, en güncel iOS sürümünü kurmanız gerekiyor."</string>
+    <string name="ios_software_update_notification_text">"LibreCHovid'in çalışması için, en güncel iOS sürümünü kurmanız gerekiyor."</string>
 
     <!-- Button Text um die Isolation zu beenden -->
     <string name="delete_infection_dialog_finish_button">"Sona erdir"</string>
