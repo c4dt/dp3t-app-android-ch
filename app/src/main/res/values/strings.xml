@@ -1313,7 +1313,7 @@ Tracing can be reactivated after isolation."</string>
     <string name="nogaenalert_title_gms_on_device">"GMS on device"</string>
     <string name="nogaenalert_msg_gms_on_device">"Google Mobile Services are installed on your device.
 
-In this case, it is recommended to use the official SwissCovid application.
+In this case, we recommend to use the official SwissCovid application.
 
 This version has been modified to run on devices without GMS and <b>is not officially supported by the Swiss authorities</b>."</string>
     <string name="nogaenalert_title_no_gms">"Unofficial app"</string>
