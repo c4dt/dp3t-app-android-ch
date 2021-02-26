@@ -14,8 +14,13 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.SpannableString;
+import android.text.method.LinkMovementMethod;
+import android.text.util.Linkify;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -24,6 +29,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import org.dpppt.android.sdk.DP3T;
+
+import java.util.Objects;
 
 import ch.admin.bag.dp3t.R;
 
@@ -62,7 +69,7 @@ public class OnboardingActivity extends FragmentActivity {
 			messageId = R.string.nogaenalert_msg_no_gms;
 		}
 
-		new AlertDialog.Builder(this, R.style.NextStep_AlertDialogStyle)
+		final AlertDialog dialog = new AlertDialog.Builder(this, R.style.NextStep_AlertDialogStyle)
 				.setTitle(titleId)
 				.setMessage(messageId)
 				.setIcon(R.drawable.ic_warning_red)
@@ -70,8 +77,11 @@ public class OnboardingActivity extends FragmentActivity {
 				.setPositiveButton(R.string.nogaenalert_positive_btn, null)
 				.setNegativeButton(R.string.nogaenalert_negative_btn, (view, arg) -> {
 					finishAndRemoveTask();
-				}).create().show();
-
+				}).create();
+		dialog.show();
+		// Make the links clickable
+		((TextView) Objects.requireNonNull(dialog.findViewById(android.R.id.message)))
+				.setMovementMethod(LinkMovementMethod.getInstance());
 	}
 
 	@Override

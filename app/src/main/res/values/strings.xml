@@ -1311,15 +1311,21 @@ Tracing can be reactivated after isolation."</string>
 
     <!-- NoGAEN -->
     <string name="nogaenalert_title_gms_on_device">"GMS on device"</string>
-    <string name="nogaenalert_msg_gms_on_device">"Google Mobile Services are installed on your device.
+    <string name="nogaenalert_msg_gms_on_device">"Google Mobile Services are installed on your device. In this case, we recommend to use the official SwissCovid application.
 
-In this case, we recommend to use the official SwissCovid application.
-
-This version has been modified to run on devices without GMS and <b>is not officially supported by the Swiss authorities</b>."</string>
+This version does not rely on Google Mobile Services for Exposure Notifications, but uses instead the free re-implementation from <a href="https://microg.org/">microG</a>,
+allowing it to run on devices without GMS.
+\n\nThe functionality of the application is the same as the original. However, as it does not have the privileges granted to GMS,
+its ability to run reliably in the background may be affected; see <a href="https://dontkillmyapp.com/">here</a> for some possible ways to tune it, depending on your system.
+\n\nPlease note that this version <b>is not officially supported by the Swiss authorities</b>."</string>
     <string name="nogaenalert_title_no_gms">"Unofficial app"</string>
     <string name="nogaenalert_msg_no_gms">"This application is not the official SwissCovid application.
 
-It has been modified to run on devices without GMS and <b>is not officially supported by the Swiss authorities</b>."</string>
+It does not rely on Google Mobile Services for Exposure Notifications, but uses instead the free re-implementation from <a href="https://microg.org/">microG</a>,
+allowing it to run on devices without GMS.
+\n\nThe functionality of the application is the same as the original. However, as it does not have the privileges granted to GMS,
+its ability to run reliably in the background may be affected; see <a href="https://dontkillmyapp.com/">here</a> for some possible ways to tune it, depending on your system.
+\n\nPlease note that this version <b>is not officially supported by the Swiss authorities</b>."</string>
     <string name="nogaenalert_positive_btn">"I understand"</string>
     <string name="nogaenalert_negative_btn">"Exit app"</string>
 </resources>
